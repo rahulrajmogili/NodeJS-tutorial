@@ -10,4 +10,6 @@ readFile("./content/first.txt", "utf8", (err, result) => {
   console.log("completed the task!");
 });
 
+// here the readFile is offloaded since it is asynchronous. Thus it is only invoked after all the immediate LOC are executed.
+
 console.log("this is the next task!");
